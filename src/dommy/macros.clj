@@ -4,10 +4,7 @@
 (declare node)
 
 
-(defn string-or-keyword [s]
-  (if (keyword? s)
-    (-> (str s) (subs 1))
-    s))
+(def string-or-keyword name)
 
 (def +default-ns+ "http://www.w3.org/1999/xhtml")
 (def +svg-ns+ "http://www.w3.org/2000/svg")
